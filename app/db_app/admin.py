@@ -24,13 +24,14 @@ class UserAdmin(BaseUserAdmin):
 
     # add_fieldsets: Used for create of user in admin panel.
     add_fieldsets = (
-        (None, {'classes': ('wide',), 'fields': ('email',
-                                                 'password1',
-                                                 'password2',
-                                                 'name',
-                                                 'is_active',
-                                                 'is_staff',
-                                                 'is_superuser')}),
+        (None, {'classes': ('wide',),  # For a better show, it doesn't matter.
+                'fields': ('email',
+                           'password1',
+                           'password2',
+                           'name',
+                           'is_active',
+                           'is_staff',
+                           'is_superuser')}),
     )
 
 

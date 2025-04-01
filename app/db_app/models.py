@@ -39,4 +39,5 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     objects = UserManager()
 
+    # change username to email for enter to admin panel.
     USERNAME_FIELD = 'email'
